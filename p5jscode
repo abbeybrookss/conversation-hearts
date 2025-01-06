@@ -1,0 +1,61 @@
+let p = -32;
+let q =10;
+let d = 40;
+let c = 'hotpink';
+let t = 'be mine';
+words = ['i love you', 'be mine', 'im yours', 'hot stuff', 'cool', 'hug me', 'xoxo'];
+
+
+function setup() {
+  createCanvas(400, 400);
+
+}
+
+
+
+function draw() {
+  background(0);
+  
+    
+  
+    fill('red')
+ circle(200,100,40)
+  
+  fill(255);
+  textSize(7);
+   text('CLICK ME',183,103);
+
+  
+
+  
+  noStroke();
+  fill(c);
+  beginShape();
+  
+   translate(width / 2, height / 1.8);
+  for (let a = 0; a < TWO_PI; a += 0.1) {
+    const r = 5;
+    const x = r * 16 * pow(sin(a), 3);
+    const y = -r * (13 * cos(a) - 5 * cos(2 * a) - 2 * cos(3 * a) - cos(4 * a));
+
+    vertex(x, y);
+  }
+  endShape();
+  
+    textSize(20);
+  fill('white');
+  text(t,p,q);
+ 
+ 
+}
+
+function mouseClicked (){
+  
+  if (dist(mouseX,mouseY,200,100)<d/2) {
+    c = color(random(255), random(255), random(255) );
+    t = random(words)
+    
+  }
+
+
+}
