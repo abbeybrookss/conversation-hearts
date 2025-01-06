@@ -1,1 +1,1 @@
-# conversation-hearts
+this was coded on p5js. I used the p5js references: p5js.org/references. I learned how to use the random function on p5js. If I were to change anything, I would add more options to the array for more variety, and center the words in the heart more effectively.
